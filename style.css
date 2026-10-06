@@ -1,0 +1,96 @@
+/* ===== พื้นฐาน ===== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    background-color: #E2DBEC;
+}
+
+h1,
+h2 {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.handwriting {
+    font-family: 'Mali', cursive;
+    line-height: 1.8;
+}
+
+/* ===== Navbar ===== */
+.navbar-custom {
+    background-color: #D1C4E9;
+
+    --bs-navbar-brand-color: #311B92;
+    --bs-navbar-brand-hover-color: #311B92;
+    --bs-navbar-color: #311B92;
+    --bs-navbar-hover-color: #5E35B1;
+    --bs-navbar-active-color: #311B92;
+}
+
+.navbar-custom .nav-link.active {
+    font-weight: 700;
+}
+
+/* ===== Hero ===== */
+.hero {
+    min-height: 80vh;
+    overflow: hidden;
+}
+
+.hero-bg {
+    object-fit: cover;
+}
+
+.hero-overlay {
+    background:
+        linear-gradient(to bottom,
+            rgba(200, 182, 240, 0.55) 0%,
+            rgba(130, 105, 190, 0.75) 50%,
+            rgba(94, 71, 152, 0.92) 100%),
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
+}
+
+.hero-title {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    line-height: 1.5;
+}
+
+/* ===== รูปปกหนังสือ ===== */
+.book-cover {
+    max-width: 300px;
+    width: 100%;
+}
+
+/* ===== รายละเอียดหนังสือ ===== */
+.book-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* บรรทัดแรกชิดขอบบนรูป บรรทัดสุดท้ายชิดขอบล่างรูป */
+    gap: 0.5rem;
+    /* ระยะห่างขั้นต่ำเวลาจอแคบ */
+    text-align: center;
+}
+
+.book-info h3,
+.book-info p {
+    margin: 0;
+    
+}
+
+/* ===== ปุ่มทดลองอ่าน ===== */
+.btn-trial {
+    background-color: #D1C4E9;
+    color: #311B92;
+    border: none;
+}
+
+.btn-trial:hover {
+    background-color: #311B92;
+    color: #fff;
+}
